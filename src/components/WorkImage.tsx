@@ -36,7 +36,18 @@ const WorkImage = (props: Props) => {
             <MdArrowOutward />
           </div>
         )}
-        <img src={props.image} alt={props.alt} />
+        <img
+          src={props.image}
+          alt={props.alt}
+          loading="lazy"
+          onError={(e) => {
+            // fallback to local placeholder if remote image fails to load
+            const target = e.currentTarget as HTMLImageElement;
+            if (!target.src.includes("/images/placeholder.webp")) {
+              target.src = "/images/placeholder.webp";
+            }
+          }}
+        />
         {isVideo && <video src={video} autoPlay muted playsInline loop></video>}
       </a>
     </div>

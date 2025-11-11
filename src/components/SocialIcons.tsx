@@ -70,7 +70,7 @@ const SocialIcons = () => {
           </a>
         </span>
         <span>
-          <a href="https://x.com/Parul_Sharma_01" target="_blank">
+          <a href="https://x.com/Parul_9738" target="_blank">
             <FaXTwitter />
           </a>
         </span>
@@ -80,7 +80,7 @@ const SocialIcons = () => {
           </a>
         </span>
       </div>
-      <a className="resume-button" href="https://drive.google.com/file/d/10e-BTxLEjCuuq_umcqJjVQLl6JFp7Hzx/view?usp=sharing">
+      <a className="resume-button" href="https://drive.google.com/file/d/1PhXTQ2oLGzl-aIIvQu8B2abVHrXegHwu/view?usp=drivesdk">
         <HoverLinks text="RESUME" />
         <span>
           <TbNotes />
